@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaXTwitter, FaLinkedin, FaInstagram } from "react-icons/fa6";
+import {  FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   // Smooth scroll function
@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Suraj Chavan</h2>
+        <h2 className="text-xl font-semibold text-purple-500">Astha Nevgi</h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
@@ -38,11 +38,9 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaFacebook />, link: "https://www.facebook.com/share/17DSNXD3qZ/" },
-            { icon: <FaXTwitter />
-, link: "https://x.com/SurajChavan4124" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/suraj-chavan-291175228" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/tech_x_suraj/" },
+            
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/astha-nevgi-94b40b312/" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/aasthaaa.20/" },
             
           ].map((item, index) => (
             <a
@@ -59,7 +57,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Suraj Chavan. All rights reserved.
+          © 2025 Astha Nevgi. All rights reserved.
         </p>
       </div>
     </footer>
