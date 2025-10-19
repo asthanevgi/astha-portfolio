@@ -17,15 +17,15 @@ const projectData = [
   {
     title: 'Event Company Website',
     description: 'An Event Company Website build React and CSS.',
-    imageUrl: profileImage1, // Replace with your actual image variable, e.g., project1Image
-    tech: ['React', 'CSS', 'Vite', 'Framer Motion'],
+    imageUrl: profileImage2, // Replace with your actual image variable, e.g., project1Image
+    tech: ['React', 'CSS', 'Vite'],
     demoLink: '#', // Replace with your live demo link
     githubLink: '#', // Replace with your GitHub repo link
   },
   {
     title: 'Johns Highland Comfort',
     description: 'A website for a guest house, e-commerce platform with features like cart, checkout, and payments.',
-    imageUrl: profileImage2, // Replace with your actual image variable
+    imageUrl: profileImage1, // Replace with your actual image variable
     tech: ['Wordpress', 'HTML', 'CSS', 'Javascript'],
     demoLink: '#', // Replace with your live demo link
     githubLink: '#', // Replace with your GitHub repo link
