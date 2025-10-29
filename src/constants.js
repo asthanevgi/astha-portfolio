@@ -1,47 +1,33 @@
 // Skills Section Logo's
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
-import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
-import angularLogo from './assets/tech_logo/angular.png';
-import reduxLogo from './assets/tech_logo/redux.png';
-import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
-import gsapLogo from './assets/tech_logo/gsap.png';
-import materialuiLogo from './assets/tech_logo/materialui.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
-import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
-import firebaseLogo from './assets/tech_logo/firebase.png';
 import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
 import javaLogo from './assets/tech_logo/java.png';
 import pythonLogo from './assets/tech_logo/python.png';
-import typescriptLogo from './assets/tech_logo/typescript.png';
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
-import postmanLogo from './assets/tech_logo/postman.png';
-import mcLogo from './assets/tech_logo/mc.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
-import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
-import rankUpGlobalLogo from './assets/company_logo/rankup_global.webp';
+import rankUpGlobalLogo from './assets/company_logo/rankup_global.jpg';
 
 // Education Section Logo's
 import rccalogo from './assets/education_logo/rcca_logo.webp';
-import rhsslogo from './assets/education_logo/rhss_logo.png';
-import lsvgshslogo from './assets/education_logo/goa_board.ico';
-
-// Project Section Logo's
+import rhsslogo from './assets/education_logo/carmel.png';
+import lsvgshslogo from './assets/education_logo/presentation.jpg';
 
 
 export const SkillsInfo = [
@@ -58,7 +44,7 @@ export const SkillsInfo = [
       // { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       // { name: 'GSAP', logo: gsapLogo },
-      { name: 'Material UI', logo: materialuiLogo },
+      // { name: 'Material UI', logo: materialuiLogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
     ],
   },
@@ -70,7 +56,7 @@ export const SkillsInfo = [
       { name: 'Express JS', logo: expressjsLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'Firebase', logo: firebaseLogo },
+      // { name: 'Firebase', logo: firebaseLogo },
       { name: 'PostgreSQL', logo: postgreLogo },
     ],
   },
@@ -92,8 +78,8 @@ export const SkillsInfo = [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
+      // { name: 'Postman', logo: postmanLogo },
+      // { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
       { name: 'Figma', logo: figmaLogo },
@@ -105,33 +91,34 @@ export const SkillsInfo = [
     {
       id: 0,
       img: rankUpGlobalLogo,
-      role: "WordPress Developer Intern",
+      role: "WordPress Developer & Designer - Intern",
       company: "RankUp Global",
       date: "October 2024 - December 2025",
-      desc: "Developed dynamic websites using the wordpress, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI and optimize application performance in an agile environment.",
+      desc: "Developed and Designed dynamic websites using the wordpress, handling both frontend and backend development. Collaborated with cross-functional teams to build and design responsive UI and optimize application performance in an agile environment.",
       skills: [
         "HTML",
         "CSS",
         "PHP",
+        "Figma",
       ],
     },
-    // {
-    //   id: 1,
-    //   img: agcLogo,
-    //   role: "Fullstack Engineer",
-    //   company: "Agumentik Group of Companies",
-    //   date: "July 2023 - March 2024",
-    //   desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-    //   skills: [
-    //     "ReactJS",
-    //     "Redux",
-    //     "JavaScript",
-    //     "Tailwind CSS",
-    //     "HTML",
-    //     "CSS",
-    //     "SQL",
-    //   ],
-    // },
+    {
+      id: 1,
+      img: rankUpGlobalLogo,
+      role: "Social Media Manager - Part Time Job",
+      company: "RankUp Global",
+      date: "January 2025 - June 2025",
+      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
+      skills: [
+        "ReactJS",
+        "Redux",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML",
+        "CSS",
+        "SQL",
+      ],
+    },
     // {
     //   id: 2,
     //   img: newtonschoolLogo,
