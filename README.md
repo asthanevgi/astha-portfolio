@@ -1,10 +1,6 @@
 # 🌐 Animated Portfolio Website
 
-A sleek, responsive, and fully customizable **animated portfolio website** built using **React.js** and **Tailwind CSS**. This project gained **27K+ views** on [YouTube]([https://youtube.com/your-video-link](https://youtu.be/ypSc8HEurGQ?si=yI3GJCye3sAKoemW)) – loved by developers and students for its modern design and clean code.
-
-## 🚀 Live Demo
-
-🔗 [View Portfolio Live](https://tarunkaushik.vercel.app/)
+A sleek, responsive, and fully customizable **animated portfolio website** built using **React.js** and **Tailwind CSS**. 
 
 ## 🛠️ Tech Stack
 
@@ -21,12 +17,10 @@ A sleek, responsive, and fully customizable **animated portfolio website** built
 - Professional sections: About, Skills, Projects, Contact, etc. 👨‍💻
 
 
-## 🧑‍💻 How to Use
-
 ### 1. Clone the Repo
 
 ```bash
-git clone [https://github.com/codingmastr/Tarun-s-Portfolio.git]
+git clone [https://github.com/asthanevgi/astha-portfolio]
 cd your-repo-name
 ````
 
@@ -36,16 +30,16 @@ cd your-repo-name
 npm install
 ```
 
-### 3. Run the App
+### 3. fix security vulnerabilities in installed packages
 
 ```bash
-npm start
+npm audit fix
 ```
 
-### 4. Build for Production
+### 4. Run the app
 
 ```bash
-npm run build
+npm run dev
 ```
 
 

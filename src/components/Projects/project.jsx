@@ -1,69 +1,95 @@
 import React from 'react';
-import ProjectCard from './projectcard';
+import Tilt from 'react-parallax-tilt';
+import { FaGithub } from 'react-icons/fa';
+import { projects } from "../../constants";
 
-// --- HOW TO ADD YOUR IMAGES ---
-// 1. Add your project images (e.g., `project1.png`) to the `src/assets/` folder.
-// 2. Import them here like this:
-// import project1Image from '../assets/project1.png';
-// import project2Image from '../assets/project2.png';
+const ProjectCard = ({ title, description, image, tags, github, webapp }) => {
+  return (
+    <Tilt
+      className="parallax-effect-glare-scale"
+      perspective={500}
+      glareEnable={true}
+      glareMaxOpacity={0.45}
+      scale={1.02}
+    >
+      <div className="flex flex-col h-full bg-gray-800 bg-opacity-80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-cyan-400/50">
+        {/* Project Image */}
+        <div className="relative h-52 w-full">
+          <img src={image} alt={title} className="w-full h-full object-cover" />
+        </div>
 
-// Placeholder image (replace with your actual imports)
-import profileImage1 from '../../assets/project1.jpg' // Using your existing icon as a placeholder
-import profileImage2 from '../../assets/project2.jpg'
-import profileImage3 from '../../assets/project3.jpg'
+        {/* Project Details */}
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
+          <p className="text-gray-300 text-sm mb-4 flex-grow">{description}</p>
 
-// --- ADD YOUR PROJECT DETAILS HERE ---
-const projectData = [
-  {
-    title: 'Event Company Website',
-    description: 'An Event Company Website build React and CSS.',
-    imageUrl: profileImage2, // Replace with your actual image variable, e.g., project1Image
-    tech: ['React', 'CSS', 'Vite'],
-    demoLink: '#', // Replace with your live demo link
-    githubLink: '#', // Replace with your GitHub repo link
-  },
-  {
-    title: 'Johns Highland Comfort',
-    description: 'A website for a guest house, e-commerce platform with features like cart, checkout, and payments.',
-    imageUrl: profileImage1, // Replace with your actual image variable
-    tech: ['Wordpress', 'HTML', 'CSS', 'Javascript'],
-    demoLink: '#', // Replace with your live demo link
-    githubLink: '#', // Replace with your GitHub repo link
-  },
-  {
-    title: 'UI-UX Design',
-    description: 'A UI-UX Design for a company "InternMap"',
-    imageUrl: profileImage3, // Replace with your actual image variable
-    tech: ['Figma', 'Whimsical'],
-    demoLink: '#', // Replace with your live demo link
-    githubLink: '#', // Replace with your GitHub repo link
-  },
-];
-// -------------------------------------
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            {tags.map((tag, index) => (
+              <span
+                key={index}
+                className="bg-blue-900 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
+          {/* Buttons */}
+          <div className={`flex ${github ? 'justify-between' : 'justify-center'} gap-4 mt-auto`}>
+            {/* Live Demo */}
+            {webapp && (
+              <a
+                href={webapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full text-center px-4 py-2 bg-gradient-to-r from-green-400 to-green-600 text-white font-semibold rounded-lg shadow-md hover:from-green-500 hover:to-green-700 transition-all duration-300 transform hover:scale-105"
+              >
+                Live Demo
+              </a>
+            )}
+
+            {/* GitHub Button - only show if link exists */}
+            {github && github !== '#' && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full text-center px-4 py-2 bg-gray-700 text-white font-semibold rounded-lg shadow-md hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+              >
+                <FaGithub size={20} />
+                GitHub
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </Tilt>
+  );
+};
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4 bg-gray-900 text-white">
+    <section id="projects" className="py-20 px-4 text-white">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          My <span className="text-white-400">Projects</span>
+          My Projects
         </h2>
         <p className="text-center text-gray-400 text-lg mb-12">
           Here are a few projects I've worked on recently.
         </p>
-        
-        {/* Responsive Project Grid */}
+
+        {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {projectData.map((project, index) => (
+          {projects.map((project) => (
             <ProjectCard
-              key={index}
+              key={project.id}
               title={project.title}
               description={project.description}
-              imageUrl={project.imageUrl}
-              tech={project.tech}
-              demoLink={project.demoLink}
-              githubLink={project.githubLink}
+              image={project.image}
+              tags={project.tags}
+              github={project.github}
+              webapp={project.webapp}
             />
           ))}
         </div>
