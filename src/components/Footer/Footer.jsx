@@ -14,6 +14,8 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
+        <div className="mx-auto mb-6 w-[100%] h-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
+        <p className="text-sm text-gray-400 tracking-wider sentencecase mb-1">Designed & Developed By</p>
         <h2 className="text-xl font-semibold text-purple-500">Astha Nevgi</h2>
 
         {/* Navigation Links - Responsive */}

@@ -164,8 +164,8 @@ export const SkillsInfo = [
       'An Event Company Website built using React and CSS for managing and showcasing event services.',
     image: project2,
     tags: ['React', 'CSS', 'JavaScript', 'HTML', 'Vite'],
-    github: '#', // Add your GitHub repo link
-    webapp: '#', // Add your live demo link
+    github: 'https://github.com/asthanevgi/my-first-repo', 
+    webapp: 'http://localhost:3000/', 
   },
   {
     id: 1,
@@ -174,8 +174,8 @@ export const SkillsInfo = [
       'A e-commerce website for buying all Gym Equipments. Has features like cart and checkout.',
     image: project1,
     tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: '#',
-    webapp: '#',
+    github: 'https://github.com/asthanevgi/fitness-repo',
+    webapp: 'http://localhost/fitness/',
   },
   {
     id: 2,
@@ -185,7 +185,7 @@ export const SkillsInfo = [
     image: project3,
     tags: ['WordPress', 'HTML', 'CSS', 'JavaScript'],
     github: '',
-    webapp: '#',
+    webapp: 'https://johnsguesthousegoa.com/',
   },
   
 ];
