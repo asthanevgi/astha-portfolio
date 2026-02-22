@@ -150,7 +150,7 @@ export const SkillsInfo = [
       school: "Presentation Convent High School, Fatorda, Goa",
       date: "Jun 2015 - March 2021",
       grade: "84%",
-      desc: "I completed my class 10 education from Late Shri Vinayak Gopal SHenvi High School School, Rawanfond, Navelim, Goa, under the Goa board, where I studied Mathematics, Geography, History and Computer.",
+      desc: "I completed my class 10 education from Presentation Convent High School School, Fatorda, Margao, Goa, under the Goa board, where I studied Mathematics, Science, Geography, History and Computer.",
       degree: "Class 10",
     },
   ];
